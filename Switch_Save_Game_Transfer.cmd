@@ -39,10 +39,10 @@ set create_backup_before_overwriting=True
 set backup_extention=__backup
 
 :: Ryujinx Save File Directory
-set ryujinx_save_file_directory=%APPDATA%\Ryujinx\bis\user\save
+set ryujinx_save_file_directory=E:\Games\Fire Emblem Engage\data\bis\user\save
 
 :: Yuzu Save File Directory (Get ID from the folder and not the app as it's reversed)
-set yuzu_save_file_directory=%APPDATA%\yuzu\nand\user\save\0000000000000000\{your yuzu user id}
+set yuzu_save_file_directory=E:\Games\Fire Emblem - Three Houses\user\nand\user\save\0000000000000000\000A909874675B498F93C3031571C089
 
 
 :: Array Of Game Save Directory Paths
@@ -85,7 +85,7 @@ set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\0100CE4010AAC00
 call :AddAboveGame
 :: Fire Emblem: Three Houses
 set switch_save_directories[!i!].title=Fire Emblem: Three Houses
-set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
+set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\0000000000000002\0
 set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\010055D009F78000
 call :AddAboveGame
 :: Ghosts n Goblins Resurrection
